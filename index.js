@@ -2,7 +2,6 @@ const express = require('express');
 const { createCanvas, loadImage } = require('canvas');
 
 const app = express();
-const PORT = process.env.PORT ||3000; // Change ce port si nécessaire
 
 // Route pour générer une carte d'identité
 app.get('/api/carte', async (req, res) => {
@@ -62,6 +61,6 @@ app.get('/api/carte', async (req, res) => {
 });
 
 // Démarrer le serveur
-app.listen(PORT, () => {
-    console.log(`Serveur démarré sur http://localhost:${PORT}`);
+app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
+    console.log('Le serveur est démarré...');
 });
