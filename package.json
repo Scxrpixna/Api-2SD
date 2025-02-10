@@ -2,17 +2,20 @@
   "name": "testcibotghost",
   "version": "1.0.0",
   "description": "API pour générer des cartes d'identité",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Scxrpixna",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mysql": "^2.18.1"
-  }
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.3.2",
+    "pm2": "^5.4.3"
+  },
+  "keywords": []
 }
-
