@@ -1,4 +1,8 @@
 {
-    "require": {}
+    "name": "mon/projet",
+    "require": {
+      "php": "^8.0"
+    }
   }
+  
   
