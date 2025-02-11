@@ -1,4 +1,5 @@
-web: php -S 0.0.0.0:8000 api.php
+web: php -S 0.0.0.0:$PORT api.php
+
 
 
 
